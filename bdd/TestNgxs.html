@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>TestNgxs</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TestCreate</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:4200/<datalist><option>http://localhost:4200/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='User Id'])[1]/following::input[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='User Id'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Ngxs Store Demo'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Title'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Submit'])[1]/preceding::input[2]</option><option>//input[@type='number']</option><option>//input</option><option>css=input.form-control.ng-untouched.ng-pristine.ng-invalid</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='User Id'])[1]/following::input[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='User Id'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Ngxs Store Demo'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Title'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Submit'])[1]/preceding::input[2]</option><option>//input[@type='number']</option><option>//input</option><option>css=input.form-control.ng-untouched.ng-dirty.ng-valid</option></datalist></td><td>111</td>
+</tr>
+<tr><td>type</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Title'])[1]/following::input[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Title'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='User Id'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Submit'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clear'])[1]/preceding::input[1]</option><option>//input[@type='title']</option><option>//div[2]/input</option><option>css=input.form-control.ng-untouched.ng-dirty.ng-valid</option></datalist></td><td>Test1111</td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Title'])[1]/following::button[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Title'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='User Id'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clear'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Id'])[1]/preceding::button[2]</option><option>//button[@type='submit']</option><option>//button</option><option>css=button.btn.btn-primary.mr-1</option></datalist></td><td></td>
+</tr>
+<tr><td>assertAlert</td><td>successfully inserted record.<datalist><option>successfully inserted record.</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TestDeletePass</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:4200/<datalist><option>http://localhost:4200/</option></datalist></td><td></td>
+</tr>
+<tr><td>chooseCancelOnNextConfirmation</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[2]/following::button[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[2]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='delectus aut autem11'])[1]/following::button[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='quis ut nam facilis et officia qui'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[3]/preceding::button[1]</option><option>//td[4]/button</option></datalist></td><td></td>
+</tr>
+<tr><td>assertConfirmation</td><td>Are you sure you want to delete?<datalist><option>Are you sure you want to delete?</option></datalist></td><td></td>
+</tr>
+<tr><td>chooseOkOnNextConfirmation</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>assertElementPresent</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[1]/following::td[2]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[1]/following::td[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[1]/following::td[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[2]/preceding::td[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[2]/preceding::td[2]</option><option>//td[2]</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TestDeleteFail</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:4200/<datalist><option>http://localhost:4200/</option></datalist></td><td></td>
+</tr>
+<tr><td>chooseCancelOnNextConfirmation</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[2]/following::button[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[2]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='delectus aut autem11'])[1]/following::button[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='quis ut nam facilis et officia qui'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[3]/preceding::button[1]</option><option>//td[4]/button</option></datalist></td><td></td>
+</tr>
+<tr><td>assertConfirmation</td><td>Are you sure you want to delete?<datalist><option>Are you sure you want to delete?</option></datalist></td><td></td>
+</tr>
+<tr><td>assertElementNotPresent</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[1]/following::td[2]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[1]/following::td[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[1]/following::td[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[2]/preceding::td[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[2]/preceding::td[2]</option><option>//td[2]</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TestUpdate</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:4200/<datalist><option>http://localhost:4200/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='delectus aut autem'])[1]/following::button[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='delectus aut autem'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[2]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='quis ut nam facilis et officia qui'])[1]/preceding::button[2]</option><option>//td[3]/button</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Title'])[1]/following::input[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Title'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='User Id'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Submit'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clear'])[1]/preceding::input[1]</option><option>//input[@type='title']</option><option>//div[2]/input</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Title'])[1]/following::input[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Title'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='User Id'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Submit'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clear'])[1]/preceding::input[1]</option><option>//input[@type='title']</option><option>//div[2]/input</option><option>css=input.form-control.ng-untouched.ng-valid.ng-dirty</option></datalist></td><td>delectus aut autem11</td>
+</tr>
+<tr><td>chooseOkOnNextConfirmation</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Title'])[1]/following::button[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Title'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='User Id'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clear'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Id'])[1]/preceding::button[2]</option><option>//button[@type='submit']</option><option>//button</option><option>css=button.btn.btn-primary.mr-1</option></datalist></td><td></td>
+</tr>
+<tr><td>assertConfirmation</td><td>Are you sure you want to update?<datalist><option>Are you sure you want to update?</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyElementPresent</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[1]/following::td[2]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[1]/following::td[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[1]/following::td[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[2]/preceding::td[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[2]/preceding::td[2]</option><option>//td[2]</option></datalist></td><td>delectus aut autem11</td>
+</tr>
+</tbody></table>
+</body>
+</html>
